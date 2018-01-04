@@ -8,16 +8,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
  */
 @ConfigurationProperties(prefix = "devmind")
 public class EmailProperties {
-    private ExternalApi sendgrid;
     private ExternalApi elasticmail;
-
-    public ExternalApi getSendgrid() {
-        return sendgrid;
-    }
-
-    public void setSendgrid(ExternalApi sendgrid) {
-        this.sendgrid = sendgrid;
-    }
 
     public ExternalApi getElasticmail() {
         return elasticmail;

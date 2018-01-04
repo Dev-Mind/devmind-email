@@ -11,13 +11,10 @@ spring:
           auth: ${MAILSENDER_AUTH_PROPERTY:true}
           starttls:
             enable: ${MAILSENDER_STARTSSL_PROPERTY:true}
+  sendgrid:
+    api-key: ${SENDGRID_APIKEY:Bar12345Bar12345}
 
 devmind:
-  sendgrid:
-    apikey: ${SENDGRID_APIKEY:Bar12345Bar12345}
-    host: ${SENDGRID_HOST:api.sendgrid.com}
-    version: ${SENDGRID_VERSION:v3}
-  
   elasticmail:
     apikey: ${ELASTICMAIL_APIKEY:Bar12345Bar12345}
     host: ${ELASTICMAIL_HOST:https://api.elasticemail.com}
