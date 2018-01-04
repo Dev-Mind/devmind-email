@@ -1,0 +1,24 @@
+spring:
+  mail:
+    protocol: smtp
+    host: ${MAILSENDER_HOST:smtp.gmail.com}
+    port: ${MAILSENDER_PORT:587}
+    username: ${MAILSENDER_USERNAME:guillaume@dev-mind.f}
+    password: ${MAILSENDER_PASSWORD:mypassword}
+    properties:
+      mail:
+        smtp:
+          auth: ${MAILSENDER_AUTH_PROPERTY:true}
+          starttls:
+            enable: ${MAILSENDER_STARTSSL_PROPERTY:true}
+
+devmind:
+  sendgrid:
+    apikey: ${SENDGRID_APIKEY:Bar12345Bar12345}
+    host: ${SENDGRID_HOST:api.sendgrid.com}
+    version: ${SENDGRID_VERSION:v3}
+  
+  elasticmail:
+    apikey: ${ELASTICMAIL_APIKEY:Bar12345Bar12345}
+    host: ${ELASTICMAIL_HOST:https://api.elasticemail.com}
+    version: ${ELASTICMAIL_VERSION:v2}
