@@ -32,6 +32,8 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-starter')
 	compile('org.springframework.boot:spring-boot-configuration-processor')
     compile('org.springframework.boot:spring-boot-starter-mail')
+    compile("org.springframework.boot:spring-boot-starter-webflux")
     compile('com.sendgrid:sendgrid-java:4.1.2')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
+    testCompile("com.squareup.okhttp3:mockwebserver:3.9.1")
 }
