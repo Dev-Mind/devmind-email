@@ -1,0 +1,10 @@
+
+image:https://www.dev-mind.fr/img/logo/logo_1500.png[[Dev-Mind]
+
+# Send an email in a Spring Boot app deployed on the web
+
+This app shows how to send an email in a Java App via 3 external API
+
+* https://mail.google.com[Google Gmail] via SMTP
+* https://sendgrid.com/[Sendgrid]
+* https://elasticemail.com/[Elastic email]
